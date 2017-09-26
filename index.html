@@ -1,0 +1,26 @@
+---
+layout: page
+title: Hello!
+excerpt: "A simple and clean responsive Jekyll theme for words and photos."
+search_omit: true
+---
+
+
+Hey! Welcome to the homepage of Pratyush Sinha. I am a computer vision algorithm developer based in Bangalore, India. I use this site as a blog and to post about hobby projects. To know more about me, check <a href="/about/"><u>here</u></a>.
+
+<header>
+	<h2>Recent Posts</h2>
+</header>
+<ul class="post-list">
+{% for post in site.posts limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+
+<a href="/posts/"><u>View All Posts >></u></a>
+
+
+<figure>
+	<img src ="/images/pratyush.JPG" alt="That's me staring into the distance.">
+	<figcaption>Me staring into the distace somewhere between Bagha and Calangute beach in Goa. Credit: Aaditya Pandya</figcaption>
+</figure>
