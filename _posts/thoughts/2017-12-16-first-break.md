@@ -18,7 +18,7 @@ date: 2017-12-16
 [__Will I do it again ?__](#again)  
 
 
-I took an 8 month break from work beginning July 2016 till March 2017. This was after two years of working as an associate product manager at hike messenger.
+I took an 8 months long break from work beginning July 2016 till March 2017. This was after two years of working as an associate product manager at hike messenger.
 
 <a name="why">__Why did I take the break ?__</a>
 
